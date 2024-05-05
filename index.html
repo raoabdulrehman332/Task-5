@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-5</h1>
+    <h2>Q5: 
+        Write a JavaScript program to calculate the days left before 14 August. <br>
+    </h2> 
+
+    <script>
+     var now1 = new Date();
+    var now2 = new Date(now1.getFullYear(),7,14);
+
+    var timeDifrenc = now2.getTime() - now1.getTime();
+    var daysLeft = Math.ceil(timeDifrenc / (1000 * 3600 * 24))
+
+    console.log(daysLeft);
+
+    // Display the number of days left in the browser
+    document.write(`<h1 class="ans">Days left before 14th August: ${daysLeft} </h2>`);
+        
+        
+
+    </script>
+</body>
+</html>
